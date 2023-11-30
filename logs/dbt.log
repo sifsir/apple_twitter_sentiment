@@ -1,0 +1,92 @@
+[0m14:41:21.767295 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104ff19d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104ff6110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104ff6810>]}
+
+
+============================== 14:41:21.769961 | 6f8a6055-34a2-4af5-b43b-1c07eae7e19e ==============================
+[0m14:41:21.769961 [info ] [MainThread]: Running with dbt=1.7.2
+[0m14:41:21.770273 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/sifrasiregar/.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt init', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m14:41:21.770582 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse dict {'dir': PosixPath('/Users/sifrasiregar/.dbt')}
+[0m14:41:21.770767 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m14:49:55.018053 [debug] [MainThread]: Starter project path: /Users/sifrasiregar/anaconda3/envs/hacktiv/lib/python3.11/site-packages/dbt/include/starter_project
+[0m14:49:55.034067 [info ] [MainThread]: 
+Your new dbt project "batch9" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m14:49:55.035139 [info ] [MainThread]: Setting up your profile.
+[0m14:52:29.449315 [error] [MainThread]: Encountered an error:
+list index out of range
+[0m14:52:29.456942 [error] [MainThread]: Traceback (most recent call last):
+  File "/Users/sifrasiregar/anaconda3/envs/hacktiv/lib/python3.11/site-packages/dbt/cli/requires.py", line 90, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sifrasiregar/anaconda3/envs/hacktiv/lib/python3.11/site-packages/dbt/cli/requires.py", line 75, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sifrasiregar/anaconda3/envs/hacktiv/lib/python3.11/site-packages/dbt/cli/main.py", line 515, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "/Users/sifrasiregar/anaconda3/envs/hacktiv/lib/python3.11/site-packages/dbt/task/init.py", line 344, in run
+    self.setup_profile(profile_name)
+  File "/Users/sifrasiregar/anaconda3/envs/hacktiv/lib/python3.11/site-packages/dbt/task/init.py", line 263, in setup_profile
+    adapter = self.ask_for_adapter_choice()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sifrasiregar/anaconda3/envs/hacktiv/lib/python3.11/site-packages/dbt/task/init.py", line 245, in ask_for_adapter_choice
+    return available_adapters[numeric_choice - 1]
+           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+IndexError: list index out of range
+
+[0m14:52:29.463755 [debug] [MainThread]: Resource report: {"command_name": "init", "command_wall_clock_time": 667.70703, "process_user_time": 0.905015, "process_kernel_time": 0.17773, "process_mem_max_rss": "105349120", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m14:52:29.464929 [debug] [MainThread]: Command `dbt init` failed at 14:52:29.464691 after 667.71 seconds
+[0m14:52:29.465662 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104ff1250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105003e10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x100b4d450>]}
+[0m14:52:29.466345 [debug] [MainThread]: Flushing usage events
+[0m14:53:01.516446 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105bac510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105bb2050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105bb2750>]}
+
+
+============================== 14:53:01.519054 | 0840728c-77c7-4d7b-99ec-ae13c6f1c710 ==============================
+[0m14:53:01.519054 [info ] [MainThread]: Running with dbt=1.7.2
+[0m14:53:01.519360 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/sifrasiregar/.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt init', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m14:53:06.161126 [info ] [MainThread]: A project called batch9 already exists here.
+[0m14:53:06.166802 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 4.6624794, "process_user_time": 0.78076, "process_kernel_time": 0.095954, "process_mem_max_rss": "104693760", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m14:53:06.167686 [debug] [MainThread]: Command `dbt init` succeeded at 14:53:06.167472 after 4.66 seconds
+[0m14:53:06.168301 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1016fa390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10166b190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10166b150>]}
+[0m14:53:06.168916 [debug] [MainThread]: Flushing usage events
+[0m14:54:07.242290 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10762c250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107632050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107632750>]}
+
+
+============================== 14:54:07.244252 | db0c520d-d453-4f35-ab4f-893cd7e8096d ==============================
+[0m14:54:07.244252 [info ] [MainThread]: Running with dbt=1.7.2
+[0m14:54:07.244567 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/sifrasiregar/.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt init', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m14:54:12.112917 [debug] [MainThread]: Starter project path: /Users/sifrasiregar/anaconda3/envs/hacktiv/lib/python3.11/site-packages/dbt/include/starter_project
+[0m14:54:12.124483 [info ] [MainThread]: 
+Your new dbt project "batch9" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m14:54:12.125153 [info ] [MainThread]: Setting up your profile.
+[0m14:59:09.381700 [info ] [MainThread]: Profile batch9 written to /Users/sifrasiregar/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m14:59:09.386534 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 302.1492, "process_user_time": 3.060749, "process_kernel_time": 0.384114, "process_mem_max_rss": "210812928", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m14:59:09.387755 [debug] [MainThread]: Command `dbt init` succeeded at 14:59:09.387483 after 302.15 seconds
+[0m14:59:09.388884 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10762d310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10763fe10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11fb64990>]}
+[0m14:59:09.389760 [debug] [MainThread]: Flushing usage events
